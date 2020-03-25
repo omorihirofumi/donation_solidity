@@ -3,16 +3,23 @@ import React, { Component } from 'react';
 // react-bootstarpのライブラリを使用する
 import { Container, Navbar } from 'react-bootstrap';
 
+import App from './component/App';
+ReactDOM.render(<App/>,document.getElementById('root'));
+
 // Appコンポーネントを定義する
-class App extends Component {
+class Register extends Component {
 
   // renderの中身がWebページに描画（レンダリング）されます。
   render() {
+    
+
+
+
     return (
         <div>
           <Container>
             <Navbar bg="primary" variant="dark">
-              <Navbar.Brand href="#home">寄付アプリ</Navbar.Brand>
+              <Navbar.Brand href="#home">大森</Navbar.Brand>
             </Navbar>
           </Container>
           <ul class="navbar-nav mr-auto">
@@ -28,11 +35,8 @@ class App extends Component {
           </ul>
         </div>
     );
-
-      
   }
-  
 }
 
 // 外部読み込みを可能にする
-export default App;
+export default Register;

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- React Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div id="root">
+      <body>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+           <a class="nav-link" href="index.html">メイン画面<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="send.html">送金画面</a>
+          </li>
+          <li class="nav-item active">
+           <a class="nav-link" href="Register.html">会員登録</a>
+          </li>
+         </ul>
+        <div class="col-md-6">
+          <!--商品情報を入力するテキストボックスを配置する-->
+          <div class="form-group">
+            <label for="itemName">名前を入力して下さい。</label>
+            <input type="text" class="form-control" id="itemName" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="facility">送金する施設を入力して下さい。</label>
+            <input type="text" class="form-control" id="description" placeholder"">
+          </div>
+          <div class="form-group">
+            <label for="price">送金する金額（wei）を入力して下さい。</label>
+            <input type="number" class="form-control" id="price" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="description">募金の希望用途を入力してください。</label>
+            <input type="text" class="form-control" id="description" placeholder"">
+          </div>
+          <!--出品するコントラクトを呼び出すボタンを配置する-->
+          <p><button onclick="sell()" class="btn btn-default">出品</button></p>
+        </div>
+      </body>
+      </html>
+    </div>
+  </body>
+</html>
