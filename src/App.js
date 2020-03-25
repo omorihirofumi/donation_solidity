@@ -9,24 +9,22 @@ class App extends Component {
   // renderの中身がWebページに描画（レンダリング）されます。
   render() {
     return (
-        <div>
-          <Container>
-            <Navbar bg="primary" variant="dark">
-              <Navbar.Brand href="#home">寄付アプリ</Navbar.Brand>
-            </Navbar>
-          </Container>
-          <ul class="navbar-nav mr-auto">
-           <li class="nav-item">
-            <a class="nav-link" href="index.html">メイン画面<span class="sr-only">(current)</span></a>
-           </li>
-           <li class="nav-item">
-            <a class="nav-link" href="send.html">送金画面</a>
-           </li>
-           <li class="nav-item active">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      　<a class="navbar-brand">ブロックチェーン寄付アプリ</a>
+      <div class="navbar-collapse collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">ホーム<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="send.html">送金する</a>
+          </li>
+          <li class="nav-item active">
             <a class="nav-link" href="Register.html">会員登録</a>
-           </li>
-          </ul>
-        </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
     );
 
       
