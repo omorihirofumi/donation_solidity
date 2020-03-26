@@ -12,6 +12,24 @@ const abi = [
 		"constant": false,
 		"inputs": [
 			{
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"name": "_email",
+				"type": "string"
+			}
+		],
+		"name": "modifyAccount",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
 				"name": "_numItems",
 				"type": "uint256"
 			},
@@ -35,58 +53,21 @@ const abi = [
 		"type": "function"
 	},
 	{
-		"constant": true,
-		"inputs": [],
-		"name": "numItems",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
+		"constant": false,
 		"inputs": [
 			{
-				"name": "",
-				"type": "address"
-			}
-		],
-		"name": "accounts",
-		"outputs": [
-			{
-				"name": "name",
+				"name": "_name",
 				"type": "string"
 			},
 			{
-				"name": "email",
+				"name": "_email",
 				"type": "string"
-			},
-			{
-				"name": "resistered",
-				"type": "bool"
 			}
 		],
+		"name": "registerAccount",
+		"outputs": [],
 		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "stopped",
-		"outputs": [
-			{
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -126,39 +107,36 @@ const abi = [
 		"type": "function"
 	},
 	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "_name",
-				"type": "string"
-			},
-			{
-				"name": "_email",
-				"type": "string"
-			}
-		],
-		"name": "registerAccount",
-		"outputs": [],
+		"inputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
-		"type": "function"
+		"type": "constructor"
 	},
 	{
-		"constant": false,
+		"constant": true,
 		"inputs": [
 			{
-				"name": "_name",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "accounts",
+		"outputs": [
+			{
+				"name": "name",
 				"type": "string"
 			},
 			{
-				"name": "_email",
+				"name": "email",
 				"type": "string"
+			},
+			{
+				"name": "resistered",
+				"type": "bool"
 			}
 		],
-		"name": "modifyAccount",
-		"outputs": [],
 		"payable": false,
-		"stateMutability": "nonpayable",
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -197,9 +175,31 @@ const abi = [
 		"type": "function"
 	},
 	{
+		"constant": true,
 		"inputs": [],
+		"name": "numItems",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
 		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "constructor"
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "stopped",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
 	}
 ]
