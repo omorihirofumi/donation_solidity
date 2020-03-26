@@ -12,24 +12,6 @@
 		"constant": false,
 		"inputs": [
 			{
-				"name": "_name",
-				"type": "string"
-			},
-			{
-				"name": "_email",
-				"type": "string"
-			}
-		],
-		"name": "modifyAccount",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
 				"name": "_numItems",
 				"type": "uint256"
 			},
@@ -46,28 +28,65 @@
 				"type": "uint256"
 			}
 		],
-		"name": "modifyItem",
+		"name": "modifyDonation",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
-		"constant": false,
+		"constant": true,
+		"inputs": [],
+		"name": "numItems",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
 		"inputs": [
 			{
-				"name": "_name",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "accounts",
+		"outputs": [
+			{
+				"name": "name",
 				"type": "string"
 			},
 			{
-				"name": "_email",
+				"name": "email",
 				"type": "string"
+			},
+			{
+				"name": "resistered",
+				"type": "bool"
 			}
 		],
-		"name": "registerAccount",
-		"outputs": [],
 		"payable": false,
-		"stateMutability": "nonpayable",
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "stopped",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -107,36 +126,39 @@
 		"type": "function"
 	},
 	{
-		"inputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "constructor"
-	},
-	{
-		"constant": true,
+		"constant": false,
 		"inputs": [
 			{
-				"name": "",
-				"type": "address"
-			}
-		],
-		"name": "accounts",
-		"outputs": [
-			{
-				"name": "name",
+				"name": "_name",
 				"type": "string"
 			},
 			{
-				"name": "email",
+				"name": "_email",
 				"type": "string"
-			},
-			{
-				"name": "resistered",
-				"type": "bool"
 			}
 		],
+		"name": "registerAccount",
+		"outputs": [],
 		"payable": false,
-		"stateMutability": "view",
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"name": "_email",
+				"type": "string"
+			}
+		],
+		"name": "modifyAccount",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -175,31 +197,9 @@
 		"type": "function"
 	},
 	{
-		"constant": true,
 		"inputs": [],
-		"name": "numItems",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
 		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "stopped",
-		"outputs": [
-			{
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
+		"stateMutability": "nonpayable",
+		"type": "constructor"
 	}
 ]

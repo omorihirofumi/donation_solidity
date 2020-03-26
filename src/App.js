@@ -8,6 +8,7 @@ class App extends Component {
 
   // renderの中身がWebページに描画（レンダリング）されます。
   render() {
+
     return (
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
       　<a class="navbar-brand">ブロックチェーン寄付アプリ</a>
@@ -26,6 +27,8 @@ class App extends Component {
       </div>
     </nav>
     );
+
+    
 
       
   }
