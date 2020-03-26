@@ -9,7 +9,7 @@ if (typeof web3 !== "undefined") {
   
 // メタマスクのアドレスを取得する
 web3js.eth.getAccounts(function(err, accounts) {
-  coinbase = accounts[0];
+  coinbase = "0xe7033f2E216c787fa5677a852Aa63BDF03eE90A7";
   console.log("coinbase is " + coinbase);
   if (typeof coinbase === "undefined") {
       alert("MetaMaskを起動してください。")
