@@ -5,6 +5,6 @@ export const firebaseConfig = {
   projectId: "blockchain-donation",
   storageBucket: "blockchain-donation.appspot.com",
   messagingSenderId: "849741540435",
-  appId: "1:849741540435:web:019edc09ce7fdf26c86aa6",
-  measurementId: "G-Q8TTZ476YE"
+  appId: "1:849741540435:web:aa9725c98d65fb47c86aa6",
+  measurementId: "G-LJH1BBDPYQ"
  };
