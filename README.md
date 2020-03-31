@@ -27,7 +27,7 @@ https://kasobu.com/metamask/
 
 # Demo
 ## プロフィール入力
-<img src="https://user-images.githubusercontent.com/59793675/77247616-363b0600-6c76-11ea-9ba5-7217b91b5ad6.gif" width="640" height="480">
+<img src="https://user-images.githubusercontent.com/59793675/77986983-8b9ca480-7353-11ea-8866-46c2a566686a.gif" width="640" height="480">
 
 # Description
 ## 以下の機能を実装しています。
