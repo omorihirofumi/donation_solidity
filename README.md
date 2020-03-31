@@ -8,7 +8,7 @@ donation_solidity
 ## アプリ製作目的
 寄付を必要としている人に過不足無く、金額が行き渡るために作成しました。
 <br>
-現在ネットや金融期間を経由した送金、特に海外への送金について多額の手数料がかかってしまう状況となっています。
+現在ネットや金融機関を経由した送金、特に海外への送金については多額の手数料がかかります。
 ブロックチェーン技術を使用することで、少額の手数料で送金することができます。
 <br>
 またブロックチェーンのプラットフォームであるEthereumを利用しており、寄付記録を残せます。
@@ -26,7 +26,7 @@ https://blockchain-donation.firebaseapp.com
 https://kasobu.com/metamask/
 
 # Demo
-## プロフィール入力
+## デモ動画
 <img src="https://user-images.githubusercontent.com/59793675/77986983-8b9ca480-7353-11ea-8866-46c2a566686a.gif" width="640" height="480">
 
 # Description
