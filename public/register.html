@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
+    <script src="./ABI.js"></script>
+    <script src="./check.js"></script>
+    <script src="./register.js"></script>
+    
+    <!-- React Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    
+    <title>donation_solidity</title>
+  </head>
+  <body>
+    <div id="root">
+      <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          　<a class="navbar-brand">ブロックチェーン寄付アプリ</a>
+          <div class="navbar-collapse collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">ホーム<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="send.html">送金する</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="register.html">会員登録</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="col-md-6">
+          <!--商品情報を入力するテキストボックスを配置する-->
+          <div class="form-group">
+            <label for="name">名前を入力して下さい。</label>
+            <input type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="email">メールアドレスを入力して下さい。</label>
+            <input type="text" class="form-control" id="email" placeholder"">
+          </div>
+          <p><button onclick="registerAccount()" class="btn btn-default">登録</button></p>
+        </div>
+      </body>
+      </html>
+    </div>
+  </body>
+</html>

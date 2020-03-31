@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+donation_solidity
+====
+<br>
 
-## Available Scripts
+# Overview
+寄付を記録するアプリ
 
-In the project directory, you can run:
+## アプリ製作目的
+寄付を必要としている人に過不足無く、金額が行き渡るために作成しました。
+<br>
+現在ネットや金融期間を経由した送金、特に海外への送金について多額の手数料がかかってしまう状況となっています。
+ブロックチェーン技術を使用することで、少額の手数料で送金することができます。
+<br>
+またブロックチェーンのプラットフォームであるEthereumを利用しており、寄付記録を残せます。
 
-### `npm start`
+# Issue
+## URL
+https://blockchain-donation.firebaseapp.com
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Usage
+* 会員登録
+* 送金記録記入
+* 送金記録の一覧表示
+* ※イーサリアム上の擬似空間のため、本当の送金はできません。
+* ※メタマスクをインストール、起動していなければ通常に動作しません。以下インストール方法
+https://kasobu.com/metamask/
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# Demo
+## プロフィール入力
+<img src="https://user-images.githubusercontent.com/59793675/77986983-8b9ca480-7353-11ea-8866-46c2a566686a.gif" width="640" height="480">
 
-### `npm test`
+# Description
+## 以下の機能を実装しています。
+* 会員機能、送金機能、送金一覧表示機能。
+* 上記の記録に関して、全てブロックチェーンにて記録しています。
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 工夫した点
+* solidityのプログラムに関しては、Remix(スマートコントラクトの統合開発環境)にてデプロイし、逐一動作確認し作業を進めた点
+* 会員登録、送金を行う際、requireを使用し、登録内容の事前確認を行っている点
+* ブロックチェーン作成ツールにはGanacheを使用している点
 
-### `npm run build`
+## 今後やりたい実装
+* 寄付を募る側の登録も行えるようにし、公開アドレス、寄付を募る理由、目標金額を設定できるようにしたい。寄付をする側はそれを基に送金を実施する。
+* 非常停止ボタン追加。何か不具合があった際、寄付金を送金者に返金する機能を実装したい。
+* 会員登録後、ヘッダー部分に登録名とEthアドレスを表示できるようにしたい。
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
